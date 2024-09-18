@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container adjustments */
+.resume-container {
+    display: flex;
+    flex-direction: column;
+    background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAlAMBIgACEQEDEQH/xAAaAAEBAQEBAQEAAAAAAAAAAAADAgABBAYF/8QAHRABAQEAAgMBAQAAAAAAAAAAAAECAxEhMUESYf/EABoBAQADAQEBAAAAAAAAAAAAAAIAAQMFBAb/xAAYEQEBAQEBAAAAAAAAAAAAAAAAAQIRA//aAAwDAQACEQMRAD8A+whMjhMtnbpMlyLJchWdJkuRZLkKzq4WDi8hQpITIoTI0CRUTFQaNUqekxUUDsd+OMiMzMimZmQXx+S5oskw9zr0uS5FkuQrKkySDyTIVnSQmRwkCgvJIPJIoKuLiIuAKlRKooK6zMiMzMgszMinxuabAMGw99demyWByXIVlSZJmjyvPsLApZSQcXkKFLlco8rg1nSRcRFwKKu1xMVFBXXXI6pHGjVviBWcZkU+NwfIMmy6NdmkyaByWBWVhIvPseSZGwKWLg4uUOM6WLg8+yQApMkyLJMhQq4uIi4IOx1yOqU1cdrlQa4zMinx0JgcJl07HZpc+l5FCZoWM6aLgsrl8hwKbKoOUko2M6XNJmhyTNZ2BSwmRQmQoUsVlGSZChXXXFCLn1KvqUGszMgvjovN8Iio6vHapZVZRmryPApJSZFCZGwKWVcoouUbGdNmkyHJIzsCmhMhzS5rOxnS5JmizSSs6FJHXI6FFy+3Ha5VDXGZli+OVEux2OO0SKlHKSDYNXmklFFyjwKWUkoZVyjxnTykzQSkzQsZ0+S5Bmlze2WoFPlcFkuWVCljqYtlQcTVJojXGZxYvjo7HO3XbdtcVKOKiuBSSrlFKqVOM6aVWaCaXKNjK16M0krzzS86C5Z2vTmmxXmzoudf1lrIdevNJmvPjR8VhqKp8rHkkYUKyapOgGoZmWD413tHbdu9x3Cduyj7btfGeqXt3sP6d/ScY2l7XNPP+lTSrllqvRNEm3lml50NyytezOjY08Odm49stZDr9DGno475fn8e/L1cW3n3lXXvxYWPNxaejDybi1I0tOmQ0bMywfFOMz6F2qzlrMtlWld7cZbLTvbSsymOlyqlZlMqvNpsWszOsz4t7erhtZmG1Pbw2vZhmeL0OLTp1nmqUbMygf/Z');
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: transparent;
+    justify-items: center;
+    padding: 20px;
+}
+
+.left-section {
+    width: 100%;
+    text-align: center;
+    border-right: none;
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    margin-top: 10%;
+    border-radius: 50%;
+    border: 5px solid #e63946;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    margin-bottom: 30px;
+    text-align: center;
+    box-shadow: 0 0 15px #e63946;
+}
+
+h3 {
+    font-size: 18px;
+    padding: 2%;
+    box-shadow: 0 0 15px #e63946;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+.right-section {
+    padding: 20px;
+    width: 100%;
+}
+
+/* Buttons */
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #ff737c;
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+    .resume-container {
+        flex-direction: row;
+    }
+
+    .left-section {
+        width: 35%;
+        border-right: 5px solid #e63946;
+        margin-bottom: 0;
+    }
+
+    .right-section {
+        width: 65%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .resume-container {
+        width: 80%;
+    }
+}
